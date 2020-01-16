@@ -5,8 +5,8 @@ const app =express();
 
 
 
-app.listen(3000, function () {
-    console.log('http://localhost:3000 - server is running...')
+app.listen(80, function () {
+    console.log('http://localhost:80 - server is running...')
 });
 
 app.get('/', function (req, res) {

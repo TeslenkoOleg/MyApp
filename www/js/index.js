@@ -78,7 +78,7 @@ function addToTable(items) {
                 input.type='checkbox';
             }
             input.value = val;
-            input.style.width = '80%';
+            input.style.width = '100%';
             input.addEventListener("change", function () {
 
                 items[i][item] = input.value;
@@ -114,7 +114,7 @@ let tableName = prompt('Enter list name:');
 if (tableName !== '') {
     $.ajax({
         type: 'POST',
-        url: 'http://176.114.15.188:3000/data',
+        url: 'http://176.114.15.188:80/data',
         data: JSON.stringify({"tableName": tableName, "Item": items})
     }).done(function (msg) {
         console.log(msg);
