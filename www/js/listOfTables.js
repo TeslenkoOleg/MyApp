@@ -4,7 +4,7 @@ function listOfTables() {
 
     $.ajax({
         type: 'POST',
-        url: 'http://176.114.15.188:80/tablesName'
+        url: 'http://176.114.15.188:3000/tablesName'
     }).done(function (msg) {
         console.log(msg);
         for (let i = 0; i < msg.length; i++) {
@@ -22,7 +22,7 @@ function SendGet(name) {
     document.getElementById('tableName').innerHTML = 'Название таблицы - '+tableName;
     $.ajax({
         type: 'POST',
-        url: 'http://176.114.15.188:80/params',
+        url: 'http://176.114.15.188:3000/params',
         data: JSON.stringify({'name':name})
     }).done(function (data) {
         console.log('function');
