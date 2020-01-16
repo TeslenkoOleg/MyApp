@@ -5,7 +5,7 @@ const app =express();
 
 
 
-app.listen(3000, function () {
+app.listen(80, function () {
     console.log('http://localhost:80 - server is running...')
 });
 
