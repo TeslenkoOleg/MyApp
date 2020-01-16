@@ -1,3 +1,4 @@
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -27,14 +28,9 @@ let done = true;
 let table = document.getElementById('table');
 let sum = null;
 let items = [];
-//addToTable(items);
-
-
 let result = 0;
 
-
 function addItem() {
-
     text = document.getElementById('text').value;
     price = document.getElementById('price').value;
     quantity = document.getElementById('quantity').value;
@@ -46,42 +42,31 @@ function addItem() {
         price = 0;
     }
     total = 0;
-    items.push({done: false,
+    items.push({done: 'false',
         text: text,
         quantity: quantity,
         price: price,
         total: total
     });
-
     console.log(items);
-
     addToTable(items);
     document.getElementById('result').innerText = result;
     document.getElementById('text').value= '';
     document.getElementById('price').value ='';
-
+    document.getElementById('quantity').value = '';
 }
-
 function showSum () {
-    let tbody = document.getElementById('table').getElementsByTagName("input");
     let sum = 0;
     for (let i = 0; i < items.length; i++) {
-
             sum += items[i].total;
-
     }
     return sum;
 }
 
 function addToTable(items) {
-
     let tbody = document.getElementById('table').getElementsByTagName("tbody")[0];
-    //console.log(tbody);
+
     let allRows = document.getElementById('table').getElementsByTagName("tbody")[0].getElementsByTagName("tr");
-    //console.log(allRows);
-
-
-
     for (let i = items.length-1; i < items.length; i++) {
         let row = document.createElement("tr");
 
@@ -89,9 +74,8 @@ function addToTable(items) {
             let val = items[i][item];
             let td = document.createElement("td");
             let input = td.appendChild(document.createElement("input"));
-
-            if (items[i][item] === true || items[i][item] === false) {
-                input.type='checkbox'
+            if (items[i][item] === true || items[i][item] === 'false') {
+                input.type='checkbox';
             }
             input.value = val;
             input.style.width = '80%';
@@ -100,12 +84,12 @@ function addToTable(items) {
                 items[i][item] = input.value;
                 items[i].total = items[i].quantity * items[i].price;
                 //arrTable[i+3].value = items[i].total;
-
+                let alltd = document.getElementById('table').getElementsByTagName("tbody")[0].getElementsByTagName("tr")[i].getElementsByTagName("td");
                 //console.log(row.rowIndex, i, 'input');
                 if (input.checked){
                     row.style.backgroundColor = 'lawngreen';
                     if (row.rowIndex === i+1){
-                        let alltd = document.getElementById('table').getElementsByTagName("tbody")[0].getElementsByTagName("tr")[i].getElementsByTagName("td");
+                        //let alltd = document.getElementById('table').getElementsByTagName("tbody")[0].getElementsByTagName("tr")[i].getElementsByTagName("td");
                         alltd[4].innerHTML = items[i].total;
                     }
                     result = showSum();
@@ -118,69 +102,29 @@ function addToTable(items) {
                     let alltd = document.getElementById('table').getElementsByTagName("tbody")[0].getElementsByTagName("tr")[i].getElementsByTagName("td");
                     alltd[4].innerHTML = items[i].total;
                 }
-                //console.log(items)
             });
-
             row.appendChild(td);
         }
-
         tbody.appendChild(row);
     }
-    /*let arrTable = document.getElementById('table').getElementsByTagName("input");
-    console.log(arrTable)*/
 }
 
+$('#btn2').on('click', function () {
+let tableName = prompt('Enter list name:');
+if (tableName !== '') {
+    $.ajax({
+        type: 'POST',
+        url: 'http://localhost:3000/data',
+        data: JSON.stringify({"tableName": tableName, "Item": items})
+    }).done(function (msg) {
+        console.log(msg);
+
+    });
+} else alert('Список не сохранен! Вы не ввели названия списка!')
+});
 
 
-/*   function checkInput(arr) {
-       for (let i =0; i<arr.length; i++){
-           arr
-       }
-       console.log(arrTable);
-   }*/
-/*function addToTable() {
 
-
-           let tbody = document.getElementById('table').getElementsByTagName("tbody")[0];
-           let row = document.createElement("tr");
-           let td = document.createElement("td");
-           let checkbox = td.appendChild(document.createElement("input"));
-    let td2 = document.createElement("td");
-           let text = td2.appendChild(document.createTextNode(document.getElementById('text').value));
-    let td3 = document.createElement("td");
-           let price = td3.appendChild(document.createTextNode(document.getElementById('price').value));
-    let td4 = document.createElement("td");
-           let quantity = td4.appendChild(document.createTextNode(document.getElementById('quantity').value));
-    let td5 = document.createElement("td");
-
-           row.appendChild(text);
-           row.appendChild(price);
-           row.appendChild(quantity);
-           tbody.appendChild(row)
-
-
-       }*/
-
-/*  showTot(arr): void {
-      for (let i = 0; i < arr.length; i++) {
-          if (arr[i].done === true) {
-              arr[i].total = arr[i].price * arr[i].quantity;
-          } else {arr[i].total = 0; }
-      }
-
-  }
-  onchange(): void {
-      this.result = this.showSum(this.items);
-      this.showTot(this.items);
-  }
-  delItem(item): void {
-      for (let i = 0; i < this.items.length; i++) {
-          if (item.id === this.items[i].id) {
-              this.items.splice(i, 1);
-          }
-      }
-      this.result = this.showSum(this.items);
-  }*/
 
 
 

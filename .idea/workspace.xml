@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26a4055c-dbe7-4d74-adfd-cfa9c7cbe401" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/img/pencil (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/img/pencil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/img/success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MyApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/statisticServer.js" beforeDir="false" afterPath="$PROJECT_DIR$/statisticServer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/js/listOfTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/listOfTables.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/listOfTables.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/listOfTables.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,17 +48,19 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/www" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\MyApp\www" />
       <recent name="C:\MyApp" />
+      <recent name="C:\MyApp\www\img" />
+      <recent name="C:\MyApp\www" />
       <recent name="C:\MyApp\www\css" />
       <recent name="C:\MyApp\www\js" />
     </key>
@@ -68,12 +76,6 @@
     <configuration name="statisticServer.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/statisticServer.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Node.js.mySQL.js" />
-        <item itemvalue="Node.js.statisticServer.js" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -105,6 +107,7 @@
       <workItem from="1578483730742" duration="620000" />
       <workItem from="1578488122152" duration="19915000" />
       <workItem from="1578646685147" duration="3835000" />
+      <workItem from="1579097214740" duration="256000" />
     </task>
     <task id="LOCAL-00001" summary="Update 10/01">
       <created>1578640566695</created>
@@ -190,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578951030008</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Update 10/01">
+      <created>1579005964689</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1579005964689</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,30 +211,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update 10/01" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="6" key="CommitChangelistDialog2" timestamp="1578951028565">
+    <state x="393" y="6" key="CommitChangelistDialog2" timestamp="1579005960095">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578951028565" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1578555367565">
+    <state x="393" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1579005960095" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1579080568266">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1578555367565" />
-    <state width="1493" height="207" key="GridCell.Tab.0.bottom" timestamp="1578860086678">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579080568266" />
+    <state width="1493" height="207" key="GridCell.Tab.0.bottom" timestamp="1579080961565">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578860086678" />
-    <state width="1493" height="207" key="GridCell.Tab.0.center" timestamp="1578860086678">
+    <state width="1493" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579080961565" />
+    <state width="1493" height="207" key="GridCell.Tab.0.center" timestamp="1579080961564">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578860086678" />
-    <state width="1493" height="207" key="GridCell.Tab.0.left" timestamp="1578860086678">
+    <state width="1493" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579080961564" />
+    <state width="1493" height="207" key="GridCell.Tab.0.left" timestamp="1579080961564">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578860086678" />
-    <state width="1493" height="207" key="GridCell.Tab.0.right" timestamp="1578860086678">
+    <state width="1493" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579080961564" />
+    <state width="1493" height="207" key="GridCell.Tab.0.right" timestamp="1579080961565">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578860086678" />
+    <state width="1493" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579080961565" />
     <state x="277" y="54" key="SettingsEditor" timestamp="1578170220093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
