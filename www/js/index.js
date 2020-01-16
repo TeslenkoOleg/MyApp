@@ -114,7 +114,7 @@ let tableName = prompt('Enter list name:');
 if (tableName !== '') {
     $.ajax({
         type: 'POST',
-        url: 'http://176.114.15.188:80/data',
+        url: 'http://176.114.15.188:3000/data',
         data: JSON.stringify({"tableName": tableName, "Item": items})
     }).done(function (msg) {
         console.log(msg);
